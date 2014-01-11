@@ -17,7 +17,7 @@ F_USB        = $(F_CPU)
 OPTIMIZATION = s
 TARGET       = template
 SRC          = main.c descriptors.c $(LUFA_SRC_USB)
-LUFA_PATH    = ../../LUFA-120730/LUFA
+LUFA_PATH    = ../../LUFA-130901/LUFA
 CC_FLAGS     = -DUSE_LUFA_CONFIG_HEADER -Iconfig/
 LD_FLAGS     =
 
