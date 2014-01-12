@@ -3,7 +3,7 @@ avr-433
 
 This software emulates the controller for some cheap remote control
 plugs which used to be available at Maplin. They work on the 433.92Mhz
-band with AM modulation. They can be controller with an AVR USB board
+band with AM modulation. They can be controlled with an AVR USB board
 and an AM modulator - total parts cost < £10.
 
 To flash the firmware to your board and to run smjctl you need 
