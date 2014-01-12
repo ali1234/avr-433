@@ -1,7 +1,7 @@
-all: hostapp
+all: smjctl
 
-hostapp: hostapp.c
-	gcc -o hostapp hostapp.c -lusb
+smjctl: smjctl.c
+	gcc -o smjctl smjctl.c -lusb
 
 clean:
-	rm -f *.o hostapp
+	rm -f *.o smjctl

@@ -1,0 +1,19 @@
+avr-433
+-------
+
+This software emulates the controller for some cheap remote control
+plugs which used to be available at Maplin. They work on the 433.92Mhz
+band with AM modulation. They can be controller with an AVR USB board
+and an AM modulator - total parts cost < £10.
+
+To flash the firmware to your board and to run smjctl you need 
+to give your user permission on the AVR usb device. Put this in
+/etc/udev/rules.d/minimus.rules:
+
+SUBSYSTEM=="usb", ACTION=="add", ATTR{idVendor}=="03eb", ATTR{idProduct}=="*", GROUP="plugdev"
+SUBSYSTEM=="usb", ACTION=="add", ATTR{idVendor}=="f055", ATTR{idProduct}=="*", GROUP="plugdev"
+
+(First line is for the bootloader, for flashing. Second line is the 
+device when running this firmware. Your user needs to be in group 
+plugdev.)
+
